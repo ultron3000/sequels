@@ -1,168 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Animation Movie Sequels</title>
 
   <!-- Tailwind -->
   <script src="https://cdn.tailwindcss.com"></script>
 
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
   <style>
-    .card:hover img {
+    .series-card:hover img {
       transform: scale(1.08);
     }
-    .card img {
-      transition: 0.4s ease;
+    .series-card img {
+      transition: transform 0.45s ease;
     }
   </style>
 </head>
 
-<body class="bg-gray-50 text-gray-900">
+<body class="min-h-screen bg-gradient-to-br from-[#0f172a] via-[#020617] to-black text-white">
 
-  <!-- Page Header -->
-  <header class="py-10 text-center">
-    <h1 class="text-4xl font-extrabold">Animation Movie Sequels</h1>
-    <p class="text-gray-500 text-lg mt-2">Watch the best animation sequels</p>
+  <!-- Header -->
+  <header class="py-14 text-center">
+    <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight">
+      Animation Movie Sequels
+    </h1>
+    <p class="text-gray-400 mt-3 text-lg">
+      Watch the best animation sequels
+    </p>
   </header>
 
-  <div class="max-w-md mx-auto px-4 mb-8">
-  <input
-    type="text"
-    id="searchInput"
-    placeholder="Search movies..."
-    class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:outline-none focus:ring-2 focus:ring-gray-400"
-  />
-</div>
+  <!-- Search -->
+  <div class="max-w-7xl mx-auto px-4 mb-10">
+    <div class="relative max-w-md mx-auto">
+      <i class="fas fa-search absolute left-4 top-1/2 -translate-y-1/2 text-gray-400"></i>
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Search movies..."
+        class="w-full pl-11 pr-4 py-3 rounded-2xl bg-white/10 backdrop-blur border border-white/10 focus:outline-none focus:ring-2 focus:ring-indigo-500 text-white placeholder-gray-400"
+      />
+    </div>
+  </div>
 
-  <!-- Grid Container -->
-  <div class="max-w-7xl mx-auto px-4 pb-20">
+  <!-- Grid -->
+  <div class="max-w-7xl mx-auto px-4 pb-24">
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8">
 
-    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+      <!-- CARD -->
+<!-- How to Train Your Dragon -->
+  <a href="https://ultron3000.github.io/ultron/how-to-train-your-dragon" class="series-card rounded-2xl overflow-hidden bg-white/5 border border-white/10 hover:shadow-indigo-500/20 transition">
+    <div class="aspect-[2/3] overflow-hidden">
+      <img src="https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781665972772/how-to-train-your-dragon-the-movie-storybook-9781665972772_hr.jpg" class="w-full h-full object-cover">
+    </div>
+    <div class="p-4">
+      <h3 class="font-semibold text-sm">How to Train Your Dragon</h3>
+      <p class="text-xs text-gray-400">Animation • Family</p>
+      <div class="mt-3 h-1.5 bg-white/10 rounded-full">
+        <div class="h-1.5 bg-gradient-to-r from-indigo-500 to-purple-500 w-[80%] rounded-full"></div>
+      </div>
+    </div>
+  </a>
 
-      <!-- CARD TEMPLATE START -->
-      <a href="https://ultron3000.github.io/ultron/how-to-train-your-dragon" class="category-card w-40 sm:w-48 bg-white rounded-xl overflow-hidden shadow-sm cursor-pointer flex-shrink-0">
-            <div class="h-24 sm:h-28 overflow-hidden relative">
-              <img src="https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781665972772/how-to-train-your-dragon-the-movie-storybook-9781665972772_hr.jpg" alt="Marvel Studios" class="w-full h-full object-cover">
-            </div>
-            <div class="p-3">
-              <h3 class="font-medium text-sm">How to Train your Dragon</h3>
-              <div class="flex items-center mt-1">
-                <span class="text-xs text-gray-500">Animation</span>
-                <span class="mx-2 text-gray-300">•</span>
-                <span class="text-xs text-gray-500"></span>
-              </div>
-            </div>
-          </a>
-          <a href="https://ultron3000.github.io/ultron/toy-story" class="category-card w-40 sm:w-48 bg-white rounded-xl overflow-hidden shadow-sm cursor-pointer flex-shrink-0">
-            <div class="h-24 sm:h-28 overflow-hidden relative">
-              <img src="https://i.pinimg.com/736x/1f/7e/f5/1f7ef555192cc5731e1d05f3339f02cb.jpg" alt="Vampire" class="w-full h-full object-cover">
-            </div>
-            <div class="p-3">
-              <h3 class="font-medium text-sm">Toy Story</h3>
-              <div class="flex items-center mt-1">
-                <span class="text-xs text-gray-500">Comedy</span>
-                <span class="mx-2 text-gray-300">•</span>
-                <span class="text-xs text-gray-500"></span>
-              </div>
-            </div>
-          </a>
-          <a href="https://ultron3000.github.io/ultron/kung-fu-panda" class="category-card w-40 sm:w-48 bg-white rounded-xl overflow-hidden shadow-sm cursor-pointer flex-shrink-0">
-            <div class="h-24 sm:h-28 overflow-hidden relative">
-              <img src="https://images.hdqwalls.com/wallpapers/2024-kung-fu-panda-4-film-ik.jpg" alt="Vampire" class="w-full h-full object-cover">
-            </div>
-            <div class="p-3">
-              <h3 class="font-medium text-sm">Kung Fu Panda</h3>
-              <div class="flex items-center mt-1">
-                <span class="text-xs text-gray-500">Comedy</span>
-                <span class="mx-2 text-gray-300">•</span>
-                <span class="text-xs text-gray-500"></span>
-              </div>
-            </div>
-          </a>
-          <a href="https://ultron3000.github.io/ultron/cars" class="category-card w-40 sm:w-48 bg-white rounded-xl overflow-hidden shadow-sm cursor-pointer flex-shrink-0">
-            <div class="h-24 sm:h-28 overflow-hidden relative">
-              <img src="https://external-preview.redd.it/pixars-creative-director-jay-ward-confirms-development-of-v0-P77gAa5dB1tZ39DOUrIJfThTApKDHBOZ0ZWUyLpwIaw.jpg?width=640&crop=smart&auto=webp&s=89a924b7b251e00712071e5d38c35ad701cf1cb7" alt="Vampire" class="w-full h-full object-cover">
-            </div>
-            <div class="p-3">
-              <h3 class="font-medium text-sm">Cars</h3>
-              <div class="flex items-center mt-1">
-                <span class="text-xs text-gray-500">Comedy</span>
-                <span class="mx-2 text-gray-300">•</span>
-                <span class="text-xs text-gray-500"></span>
-              </div>
-            </div>
-          </a>
-          <a href="https://ultron3000.github.io/ultron/ice-age" class="category-card w-40 sm:w-48 bg-white rounded-xl overflow-hidden shadow-sm cursor-pointer flex-shrink-0">
-            <div class="h-24 sm:h-28 overflow-hidden relative">
-              <img src="https://media.themoviedb.org/t/p/w780/kyTlMMVWo1GffYoQctZwLqJcwaj.jpg" alt="Vampire" class="w-full h-full object-cover">
-            </div>
-            <div class="p-3">
-              <h3 class="font-medium text-sm">Ice Age</h3>
-              <div class="flex items-center mt-1">
-                <span class="text-xs text-gray-500">Comedy</span>
-                <span class="mx-2 text-gray-300">•</span>
-                <span class="text-xs text-gray-500"></span>
-              </div>
-            </div>
-          </a>
-          <a href="https://ultron3000.github.io/ultron/the-bad-guys" class="category-card w-40 sm:w-48 bg-white rounded-xl overflow-hidden shadow-sm cursor-pointer flex-shrink-0">
-            <div class="h-24 sm:h-28 overflow-hidden relative">
-              <img src="https://images.squarespace-cdn.com/content/v1/5fbc4a62c2150e62cfcb09aa/1711954331687-8S4VFNJY2N9X03YJRJ9R/Bad%2BGuys%2BDOGO%2BMovies.jpg" alt="Vampire" class="w-full h-full object-cover">
-            </div>
-            <div class="p-3">
-              <h3 class="font-medium text-sm">The Bad Guys</h3>
-              <div class="flex items-center mt-1">
-                <span class="text-xs text-gray-500">Comedy</span>
-                <span class="mx-2 text-gray-300">•</span>
-                <span class="text-xs text-gray-500"></span>
-              </div>
-            </div>
-          </a>
-          <a href="https://ultron3000.github.io/ultron/hotel-transylvania" class="category-card w-40 sm:w-48 bg-white rounded-xl overflow-hidden shadow-sm cursor-pointer flex-shrink-0">
-            <div class="h-24 sm:h-28 overflow-hidden relative">
-              <img src="https://m.media-amazon.com/images/I/91JhhkJz0EL.jpg" alt="Vampire" class="w-full h-full object-cover">
-            </div>
-            <div class="p-3">
-              <h3 class="font-medium text-sm">Hotel Transylvania</h3>
-              <div class="flex items-center mt-1">
-                <span class="text-xs text-gray-500">Comedy</span>
-                <span class="mx-2 text-gray-300">•</span>
-                <span class="text-xs text-gray-500"></span>
-              </div>
-            </div>
-          </a>
-          <a href="https://ultron3000.github.io/ultron/madagascar" class="category-card w-40 sm:w-48 bg-white rounded-xl overflow-hidden shadow-sm cursor-pointer flex-shrink-0">
-            <div class="h-24 sm:h-28 overflow-hidden relative">
-              <img src="https://m.media-amazon.com/images/I/61fNWNnOQaL._AC_UF894,1000_QL80_.jpg" alt="Vampire" class="w-full h-full object-cover">
-            </div>
-            <div class="p-3">
-              <h3 class="font-medium text-sm">Madagascar</h3>
-              <div class="flex items-center mt-1">
-                <span class="text-xs text-gray-500">Comedy</span>
-                <span class="mx-2 text-gray-300">•</span>
-                <span class="text-xs text-gray-500"></span>
-              </div>
-            </div>
-          </a>
+  <!-- Toy Story -->
+  <a href="https://ultron3000.github.io/ultron/toy-story" class="series-card rounded-2xl overflow-hidden bg-white/5 border border-white/10 hover:shadow-indigo-500/20 transition">
+    <div class="aspect-[2/3] overflow-hidden">
+      <img src="https://i.pinimg.com/736x/1f/7e/f5/1f7ef555192cc5731e1d05f3339f02cb.jpg" class="w-full h-full object-cover">
+    </div>
+    <div class="p-4">
+      <h3 class="font-semibold text-sm">Toy Story</h3>
+      <p class="text-xs text-gray-400">Animation • Comedy</p>
+      <div class="mt-3 h-1.5 bg-white/10 rounded-full">
+        <div class="h-1.5 bg-gradient-to-r from-indigo-500 to-purple-500 w-[85%] rounded-full"></div>
+      </div>
+    </div>
+  </a>
+
+  <!-- Kung Fu Panda -->
+  <a href="https://ultron3000.github.io/ultron/kung-fu-panda" class="series-card rounded-2xl overflow-hidden bg-white/5 border border-white/10 hover:shadow-indigo-500/20 transition">
+    <div class="aspect-[2/3] overflow-hidden">
+      <img src="https://images.hdqwalls.com/wallpapers/2024-kung-fu-panda-4-film-ik.jpg" class="w-full h-full object-cover">
+    </div>
+    <div class="p-4">
+      <h3 class="font-semibold text-sm">Kung Fu Panda</h3>
+      <p class="text-xs text-gray-400">Animation • Comedy</p>
+      <div class="mt-3 h-1.5 bg-white/10 rounded-full">
+        <div class="h-1.5 bg-gradient-to-r from-indigo-500 to-purple-500 w-[82%] rounded-full"></div>
+      </div>
+    </div>
+  </a>
+
+  <!-- Cars -->
+  <a href="https://ultron3000.github.io/ultron/cars" class="series-card rounded-2xl overflow-hidden bg-white/5 border border-white/10 hover:shadow-indigo-500/20 transition">
+    <div class="aspect-[2/3] overflow-hidden">
+      <img src="https://external-preview.redd.it/pixars-creative-director-jay-ward-confirms-development-of-v0-P77gAa5dB1tZ39DOUrIJfThTApKDHBOZ0ZWUyLpwIaw.jpg?width=640&crop=smart&auto=webp&s=89a924b7b251e00712071e5d38c35ad701cf1cb7" class="w-full h-full object-cover">
+    </div>
+    <div class="p-4">
+      <h3 class="font-semibold text-sm">Cars</h3>
+      <p class="text-xs text-gray-400">Animation • Comedy</p>
+      <div class="mt-3 h-1.5 bg-white/10 rounded-full">
+        <div class="h-1.5 bg-gradient-to-r from-indigo-500 to-purple-500 w-[80%] rounded-full"></div>
+      </div>
+    </div>
+  </a>
+
+  <!-- Ice Age -->
+  <a href="https://ultron3000.github.io/ultron/ice-age" class="series-card rounded-2xl overflow-hidden bg-white/5 border border-white/10 hover:shadow-indigo-500/20 transition">
+    <div class="aspect-[2/3] overflow-hidden">
+      <img src="https://media.themoviedb.org/t/p/w780/kyTlMMVWo1GffYoQctZwLqJcwaj.jpg" class="w-full h-full object-cover">
+    </div>
+    <div class="p-4">
+      <h3 class="font-semibold text-sm">Ice Age</h3>
+      <p class="text-xs text-gray-400">Animation • Comedy</p>
+      <div class="mt-3 h-1.5 bg-white/10 rounded-full">
+        <div class="h-1.5 bg-gradient-to-r from-indigo-500 to-purple-500 w-[78%] rounded-full"></div>
+      </div>
+    </div>
+  </a>
+
+<!-- The Bad Guys -->
+  <a href="https://ultron3000.github.io/ultron/the-bad-guys" class="series-card rounded-2xl overflow-hidden bg-white/5 border border-white/10 hover:shadow-indigo-500/20 transition">
+    <div class="aspect-[2/3] overflow-hidden">
+      <img src="https://images.squarespace-cdn.com/content/v1/5fbc4a62c2150e62cfcb09aa/1711954331687-8S4VFNJY2N9X03YJRJ9R/Bad%2BGuys%2BDOGO%2BMovies.jpg" class="w-full h-full object-cover">
+    </div>
+    <div class="p-4">
+      <h3 class="font-semibold text-sm">The Bad Guys</h3>
+      <p class="text-xs text-gray-400">Animation • Comedy</p>
+      <div class="mt-3 h-1.5 bg-white/10 rounded-full">
+        <div class="h-1.5 bg-gradient-to-r from-indigo-500 to-purple-500 w-[82%] rounded-full"></div>
+      </div>
+    </div>
+  </a>
+
+  <!-- Hotel Transylvania -->
+  <a href="https://ultron3000.github.io/ultron/hotel-transylvania" class="series-card rounded-2xl overflow-hidden bg-white/5 border border-white/10 hover:shadow-indigo-500/20 transition">
+    <div class="aspect-[2/3] overflow-hidden">
+      <img src="https://m.media-amazon.com/images/I/91JhhkJz0EL.jpg" class="w-full h-full object-cover">
+    </div>
+    <div class="p-4">
+      <h3 class="font-semibold text-sm">Hotel Transylvania</h3>
+      <p class="text-xs text-gray-400">Animation • Comedy</p>
+      <div class="mt-3 h-1.5 bg-white/10 rounded-full">
+        <div class="h-1.5 bg-gradient-to-r from-indigo-500 to-purple-500 w-[80%] rounded-full"></div>
+      </div>
+    </div>
+  </a>
+
+  <!-- Madagascar -->
+  <a href="https://ultron3000.github.io/ultron/madagascar" class="series-card rounded-2xl overflow-hidden bg-white/5 border border-white/10 hover:shadow-indigo-500/20 transition">
+    <div class="aspect-[2/3] overflow-hidden">
+      <img src="https://m.media-amazon.com/images/I/61fNWNnOQaL._AC_UF894,1000_QL80_.jpg" class="w-full h-full object-cover">
+    </div>
+    <div class="p-4">
+      <h3 class="font-semibold text-sm">Madagascar</h3>
+      <p class="text-xs text-gray-400">Animation • Comedy</p>
+      <div class="mt-3 h-1.5 bg-white/10 rounded-full">
+        <div class="h-1.5 bg-gradient-to-r from-indigo-500 to-purple-500 w-[78%] rounded-full"></div>
+      </div>
+    </div>
+  </a>
+
+
+
 
     </div>
   </div>
- 
-<script>
-  const searchInput = document.getElementById("searchInput");
-  const cards = document.querySelectorAll(".category-card");
 
-  searchInput.addEventListener("keyup", function () {
-    const searchValue = this.value.toLowerCase();
+  <!-- Search Script -->
+  <script>
+    const searchInput = document.getElementById("searchInput");
+    const cards = document.querySelectorAll(".series-card");
 
-    cards.forEach(card => {
-      const title = card.querySelector("h3").innerText.toLowerCase();
-      card.style.display = title.includes(searchValue) ? "block" : "none";
+    searchInput.addEventListener("input", function () {
+      const query = this.value.toLowerCase();
+      cards.forEach(card => {
+        card.style.display = card.innerText.toLowerCase().includes(query)
+          ? "block"
+          : "none";
+      });
     });
-  });
-</script>
-
+  </script>
 
 </body>
 </html>
